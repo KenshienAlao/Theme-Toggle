@@ -1,6 +1,6 @@
 "use client";
 
-import { MoonIcon } from "lucide-react";
+import { MoonIcon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 
 function ThemeToggle() {
@@ -38,7 +38,7 @@ function ThemeToggle() {
     <section className="min-w-screen py-16">
       <div className="mx-auto">
         <button onClick={toggleTheme}>
-          <MoonIcon /> <p> Theme is: {message}</p>
+          {dark ? <MoonIcon /> : <Sun />} <p> Theme is: {message}</p>
         </button>
       </div>
     </section>
