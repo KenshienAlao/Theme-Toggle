@@ -38,7 +38,7 @@ function ThemeToggle() {
     <section className="min-w-screen py-16">
       <div className="mx-auto">
         <button onClick={toggleTheme}>
-          {dark ? <MoonIcon /> : <Sun />} <p> Theme is: {message}</p>
+          {dark ? <MoonIcon /> : <Sun />} <p> sTheme is: {message}</p>
         </button>
       </div>
     </section>
