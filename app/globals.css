@@ -13,7 +13,11 @@
   --accent: rgb(110, 110, 255);
 }
 
+/* instead of hardcoded colors, use the variable for smooth transition */
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
